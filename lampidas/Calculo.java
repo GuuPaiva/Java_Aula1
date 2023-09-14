@@ -1,0 +1,14 @@
+package lampidas;
+
+@FunctionalInterface
+public interface Calculo {
+
+    double executar(double a, double b);
+
+    default String legal() {
+        return "legal";
+    }
+    default String muitolegal(){
+        return "fodinha";
+    }
+}
